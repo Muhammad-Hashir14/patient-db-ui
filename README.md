@@ -12,9 +12,15 @@ A minimal web UI to view, edit, and soft-delete patient records from the Postgre
 
 ## Tech Stack
 
-- Python + Flask (serverless on Vercel)
+- Python + Flask
 - Vanilla HTML/CSS/JS (no framework)
 - PostgreSQL via psycopg2
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `DATABASE_URL` | PostgreSQL connection string |
 
 ## Local Development
 
@@ -25,10 +31,3 @@ python api/index.py
 ```
 
 Open http://localhost:5000
-
-## Deploy to Vercel
-
-1. Push this folder to a GitHub repo
-2. Import the repo at https://vercel.com/new
-3. Add environment variable: `DATABASE_URL` = your Neon PostgreSQL connection string
-4. Deploy — Vercel auto-detects `vercel.json`
